@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     const url="https://us21.api.mailchimp.com/3.0/lists/9b3374efca";
     const options={
         method:"POST",
-        auth: "Shivam2:583e46eed2eaedaad33170aa9a7ddbcd-us21"
+        auth: "Shivam2:e9b1bfb1414b88eaafc3ab467e8ada91-us21"
     }
     const request=https.request(url,options,function(response){
         if(response.statusCode===200)
@@ -55,5 +55,6 @@ app.post("/failure",function(req,res){
     res.redirect("/");
 })
 
+//NEW API KEY e9b1bfb1414b88eaafc3ab467e8ada91-us21
 //API 583e46eed2eaedaad33170aa9a7ddbcd-us21
 //List Id 9b3374efca
